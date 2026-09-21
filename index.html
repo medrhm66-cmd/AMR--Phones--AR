@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMR PHONES AR </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استخدام خط عربي جميل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شريط العناوين العلوي -->
+    <header class="app-header">
+        <div class="logo">📱 Mobiles Guide</div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ابحث عن هاتف أو شركة...">
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- قسم عرض الشركات -->
+        <section id="companies-section" class="view-section">
+            <h2 class="section-title">اختر الشركة المصنعة</h2>
+            <div id="companies-grid" class="grid">
+                <!-- يتم تعبئتها برمجياً -->
+            </div>
+        </section>
+
+        <!-- قسم عرض الفئات والهواتف للشركة المحددة -->
+        <section id="phones-section" class="view-section hidden">
+            <button class="back-btn" onclick="goBackToCompanies()">⬅ العودة للشركات</button>
+            <h2 id="company-title" class="section-title"></h2>
+            <div id="phones-grid" class="grid">
+                <!-- يتم تعبئتها برمجياً -->
+            </div>
+        </section>
+
+        <!-- قسم المواصفات الكاملة والمزايا والعيوب -->
+        <section id="details-section" class="view-section hidden">
+            <button class="back-btn" onclick="goBackToPhones()">⬅ العودة للقائمة</button>
+            <div id="phone-details-card" class="details-card">
+                <!-- يتم تعبئتها برمجياً -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
