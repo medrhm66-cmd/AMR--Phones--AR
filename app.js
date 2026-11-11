@@ -315,3 +315,4 @@ searchInput.addEventListener('input', (e) => {
 
 // بدء التشغيل
 renderCompanies();
+
